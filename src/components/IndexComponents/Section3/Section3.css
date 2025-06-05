@@ -1,0 +1,202 @@
+/* .SecThreeParent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.SecThreeParent > div {
+  height: 629px;
+  margin: 0px;
+}
+
+.HexaGonalImage {
+  overflow: hidden;
+}
+.SecThreeLeft {
+  padding: 90px;
+  width: 43%;
+  background-color: #fafafa;
+}
+.SecThreeLeft > div {
+  height: 100%;
+}
+.SecThreeRight {
+  padding: 53px 110px;
+  width: 60%;
+  background-color: #3b3836;
+}
+
+.SecThreeRight > * {
+  color: white;
+}
+.SecThreeRight > div {
+  margin-top: 30px;
+}
+.SecThreeRight p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.SecThreeRight span {
+  margin-left: 30px;
+}
+.RRResult {
+  font-size: 45px;
+}
+.hammersec3 {
+  width: 30px;
+  margin-right: 4px;
+}
+.sec3para {
+  color: rgb(214, 202, 202);
+  margin-left: 35px;
+} */
+
+/* deepseek */
+.SecThreeParent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensure children stretch to the same height */
+  padding: 0px;
+}
+
+.SecThreeParent > div {
+  margin: 0px;
+}
+
+.HexaGonalImage {
+  overflow: hidden;
+}
+
+.SecThreeLeft {
+  padding: 90px;
+  width: 40%; /* Adjusted width to leave room for padding */
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SecThreeLeft > div {
+  height: 100%;
+}
+
+.SecThreeRight {
+  padding: 53px 110px;
+  width: 60%; /* Adjusted width to leave room for padding */
+  background-color: #3b3836;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SecThreeRight > * {
+  color: white;
+}
+
+.SecThreeRight > div {
+  margin-top: 30px;
+}
+
+.SecThreeRight p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.SecThreeRight span {
+  margin-left: 30px;
+}
+
+.RRResult {
+  font-size: 45px;
+}
+
+.hammersec3 {
+  width: 30px;
+  margin-right: 4px;
+}
+
+.sec3para {
+  color: rgb(214, 202, 202);
+  margin-left: 35px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .SecThreeParent {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .SecThreeLeft,
+  .SecThreeRight {
+    width: 100%; /* Full width on smaller screens */
+    padding: 40px; /* Reduce padding for smaller screens */
+  }
+
+  .SecThreeLeft {
+    padding-bottom: 20px; /* Adjust padding for spacing */
+  }
+
+  .SecThreeRight {
+    padding-top: 20px; /* Adjust padding for spacing */
+  }
+
+  .RRResult {
+    font-size: 35px; /* Reduce font size for smaller screens */
+  }
+
+  .SecThreeRight p {
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+
+  .sec3para {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .SecThreeLeft,
+  .SecThreeRight {
+    padding: 30px; /* Further reduce padding for smaller screens */
+  }
+
+  .RRResult {
+    font-size: 30px; /* Further reduce font size for smaller screens */
+  }
+
+  .SecThreeRight p {
+    font-size: 16px; /* Further reduce font size for smaller screens */
+  }
+
+  .hammersec3 {
+    width: 25px; /* Reduce icon size for smaller screens */
+  }
+
+  .sec3para {
+    margin-left: 15px; /* Further adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .SecThreeLeft,
+  .SecThreeRight {
+    padding: 20px; /* Minimal padding for very small screens */
+  }
+
+  .RRResult {
+    font-size: 25px; /* Minimal font size for very small screens */
+  }
+
+  .SecThreeRight p {
+    font-size: 14px; /* Minimal font size for very small screens */
+  }
+
+  .hammersec3 {
+    width: 20px; /* Minimal icon size for very small screens */
+  }
+
+  .sec3para {
+    margin-left: 10px; /* Minimal margin for very small screens */
+  }
+}
